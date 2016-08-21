@@ -1,7 +1,64 @@
 body {
-
+	margin-left:10px;
+	margin-right: 10px;
+	width: 100%;
 }
 
-headers {
+.menuBar {
+	position: relative;
+}
 
+.menuBar ul {<!DOCTYPE html>
+	float: left;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;	
+}
+.menuBar li {
+	float: left;
+	display: inline-block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none
+}``
+
+.menuDrop a {
+	display: none;
+
+.menuBar li:hover {
+	background-color: red;
+}
+
+.menuBtn {
+	background-color: #4CAF50;
+	color: white;
+	padding: 16px;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+}
+
+.menuContent {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.menuContent p {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+.menuBtn:hover .menuContent {
+	display: block;
+}
+.menuBar:hover .menuBtn {
+	background-color: #3e8e41;
 }
