@@ -1,7 +1,10 @@
 body {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
+    background-color: #000000;
 }
+
+/* header and footer style */
 
 header {
   padding: 20px 0;
@@ -24,7 +27,60 @@ header nav {
   right: 0;
 }
 
-header a {
-  padding: 0 20px;
-  margin: 0;
+header a, 
+footer a {
+    text-decoration: none;
+    padding: 0 20px;
+    margin: 0;
+    color: #ffffff;
+    padding: 10px;
+    display: block;
+}
+
+header a:visited, 
+footer a:visited {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+header a:hover, 
+footer a:hover, 
+header a:active, 
+footer a:active {
+    text-decoration: none;
+    color: #337EFF;
+}
+
+footer p {
+    display: inline-block;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+}
+
+/* centerpiece style */
+
+.jumbotron {
+  display: flex;
+  align-items: center;
+  background-image: url("../media/jumbo.jpg");
+  background-size: cover;
+  color: #ffffff;
+  height: 500px;
+  text-shadow: 0.25px 0.25px 0.25px #000000;
+  box-shadow: 0 0 16px 16px #000000 inset;
+}
+
+.jumbotron h2 {
+  font-size: 60px;
+  font-weight: 700;
+  margin: 0 0 20px;
+  color: #fff;
+}
+
+.jumbotron h3 {
+  margin: 0 0 20px;
+  color: #fff;
 }
