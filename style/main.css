@@ -51,10 +51,6 @@ footer a:active {
     color: #337EFF;
 }
 
-footer p {
-    display: inline-block;
-}
-
 footer ul {
     list-style: none;
     display: flex;
@@ -87,3 +83,14 @@ footer ul {
 }
 
 /* content styles */
+
+section .row img {
+  margin: 0 0 30px;
+  width: 50%;
+  height: 50%;
+  box-shadow: 0 0 16px 16px #000000 inset;
+}
+
+.col-md-6 {
+  margin: 0 0 30px;
+}
