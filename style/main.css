@@ -86,8 +86,7 @@ footer ul {
 
 section .row img {
   margin: 0 0 30px;
-  width: 50%;
-  height: 50%;
+  width: 100%;
   box-shadow: 0 0 16px 16px #000000 inset;
 }
 
