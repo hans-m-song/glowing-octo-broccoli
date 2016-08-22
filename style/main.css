@@ -76,11 +76,14 @@ footer ul {
 .jumbotron h2 {
   font-size: 60px;
   font-weight: 700;
-  margin: 0 0 20px;
-  color: #fff;
 }
 
-.jumbotron h3 {
+.jumbotron h2,
+.jumbotron h3,
+.jumbotron h7 {
+  color: #ffffff;
+  text-shadow: 0 0 10px #cccccc;
   margin: 0 0 20px;
-  color: #fff;
 }
+
+/* content styles */
