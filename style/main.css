@@ -6,26 +6,38 @@ body {
 
 /* header and footer style */
 
-header {
-  padding: 20px 0;
+header,
+footer {
+    padding: 20px 0;
 }
 
 header .row,
 footer .row {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
+    padding: 5px;
 }
 
-header h1 {
-  font-weight: 700;
-  margin: 0;
+header h1,
+footer p {
+    font-weight: 700;
+    margin: 0;
 }
 
-header nav {
-  display: flex;
-  justify-content: flex-end;
-  right: 0;
+header nav,
+footer li {
+    position: relative;
+    display: block;
+    display: flex;
+    justify-content: flex-end;
 }
+
+footer .col-sm-8 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* header and footer link styles */
 
 header a, 
 footer a {
@@ -49,47 +61,56 @@ header a:active,
 footer a:active {
     text-decoration: none;
     color: #337EFF;
-}
-
-footer ul {
-    list-style: none;
-    display: flex;
+    /* idk if i want this tbh fam
+    box-shadow: 0 0 2px 2px #337EFF,
+          inset 0 0 2px 2px #337EFF;
+    */
 }
 
 /* centerpiece style */
 
 .jumbotron {
-  display: flex;
-  align-items: center;
-  background-image: url("../media/jumbo.jpg");
-  background-size: cover;
-  color: #ffffff;
-  height: 500px;
-  text-shadow: 0.25px 0.25px 0.25px #000000;
-  box-shadow: 0 0 16px 16px #000000 inset;
+    display: flex;
+    align-items: center;
+    background-image: url("../media/jumbo.jpg");
+    background-size: cover;
+    color: #ffffff;
+    height: 500px;
+    text-shadow: 0.25px 0.25px 0.25px #000000;
+    box-shadow: 0 0 16px 16px #000000 inset;
 }
 
 .jumbotron h2 {
-  font-size: 60px;
-  font-weight: 700;
+    font-size: 60px;
+    font-weight: 700;
 }
 
 .jumbotron h2,
 .jumbotron h3,
 .jumbotron h7 {
-  color: #ffffff;
-  text-shadow: 0 0 10px #cccccc;
-  margin: 0 0 20px;
+    color: #ffffff;
+    text-shadow: 0 0 10px #cccccc;
+    margin: 0 0 20px;
 }
 
 /* content styles */
 
 section .row img {
-  margin: 0 0 30px;
-  width: 100%;
-  box-shadow: 0 0 16px 16px #000000 inset;
+    margin: 0 0 30px;
+    width: 70%;
+    margin-left: 15%;
+    box-shadow: 0 0 16px 16px #000000 inset;
+    position: relative;
 }
 
 .col-md-6 {
-  margin: 0 0 30px;
+    margin: 0 0 30px;
+}
+
+.caption {
+    top: 0%;
+    left: 23%;
+    position: absolute;
+    color: #ffffff;
+    text-shadow: 0 0 20px #000000;
 }
